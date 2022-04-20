@@ -1,0 +1,260 @@
+/* Link Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Serif:wght@300&display=swap");
+/*font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Serif', sans-serif;*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  transition: 0.2s;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: normal;
+  transition: 0.5s linear;
+}
+/* Header starts here */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clgName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bolder;
+}
+
+.multiContainer {
+  margin-top: 20px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  background-color: snow;
+  flex-direction: column;
+}
+
+/* Nav Section */
+
+.listItems a,
+#quickLinks {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  padding: 12px 23px;
+  margin: 10px 12px;
+  background-color: aqua;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 800;
+  border-radius: 2px;
+  border: none;
+}
+.listItems a:hover {
+  background: whitesmoke;
+  color: blue;
+}
+/* image Slider */
+
+.homeGallery_img,
+.homeGallery_img > img {
+  width: 200px;
+  margin: 12px 10px;
+  filter: grayscale(1);
+  transition: 1s filter, 0.5s transform;
+  cursor: pointer;
+}
+.homeGallery_img:hover,
+.homeGallery_img > img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0);
+}
+.homeGallery > h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 23px;
+  text-align: center;
+}
+/* News Container */
+.Container {
+  padding: 12px;
+  margin: 12px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+.Container > h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.Container > .vision > h1,
+.Container > .mission > h1,
+.facilities > h1 {
+  color: blue;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+.Container ul {
+  font-family: "Roboto Serif", sans-serif;
+  line-height: 2.5rem;
+}
+/* Facilities Container */
+.facilities {
+  padding: 12px;
+  margin: 12px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.facilitiesItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 50px;
+  transition: 0.2s;
+  cursor: pointer;
+  margin: 12px 10px;
+}
+.facilitiesItem:hover {
+  background: aqua;
+}
+.facilities .facilitiesImg svg {
+  z-index: 10;
+  margin-right: 12px;
+  width: 30px;
+  height: 30px;
+}
+/* Seconday nav */
+.secondaryNav {
+  height: 80px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.secondaryNav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.secNavItem {
+  margin: 7px;
+}
+.secNavItem a {
+  margin: 15px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+  padding: 5px 12px;
+  transition: 0.2s;
+}
+.secNavItem a:hover {
+  color: blue;
+  border-radius: 25px;
+}
+/* About Us section */
+.aboutUs {
+  height: 500px;
+}
+.aboutUs h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: poppins;
+  line-height: 5rem;
+  text-align: center;
+}
+
+.aboutUs p {
+  width: 80%;
+  margin: auto;
+  font-size: 1.5rem;
+}
+.aboutUs p span {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+/* principalDesk section */
+.principalDesk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.principalDesk img {
+  width: 50%;
+  margin-top: 50px;
+}
+.principalDesk h3 {
+  color: blue;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-top: 30px;
+  font-size: 2rem;
+}
+.principalKnowMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: aqua;
+  width: 80%;
+  margin-bottom: 50px;
+}
+.content {
+  width: 80%;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+/* programmes section */
+.programmesCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.programmesCards .card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 300px;
+  border-radius: 5px;
+  background-color: #e5edff;
+  /* background: linear-gradient(90deg, pink, pink); */
+  height: 110px;
+  margin: 12px 23px;
+}
+.programmesCards .cardImg > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+.programmesCards .cardTxt {
+  color: blue;
+  font-size: 1.2rem;
+}
+/* alumina section */
+.alumina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alumina > img {
+  width: 100%;
+}
